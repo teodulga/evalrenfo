@@ -38,7 +38,7 @@ L’espace d’observation est un vecteur de **8 valeurs continues** :
 
 ### Actions
 
-L’espace d’actions est **discret** (`Discrete(4)`) :
+L’espace d’actions est **discret** :
 
 - 0 : ne rien faire  
 - 1 : activer le moteur gauche  
@@ -125,7 +125,7 @@ Voici les résultats obtenus après entraînement et évaluation :
 - Les différences de nombre d’épisodes observées sur les courbes s’expliquent par la **durée variable des épisodes** : A2C termine souvent plus rapidement, PPO explore prudemment, DQN est intermédiaire.  
 - PPO obtient le meilleur score moyen, tandis que DQN et A2C présentent plus de variations ou des scores négatifs.  
 - L’ajout du chronométrage m’a permis de constater que PPO est non seulement performant mais aussi plus rapide à entraîner que DQN et A2C.  
-- Les limites : hyperparamètres non optimisés, un seul seed, nombre de timesteps limité par le temps disponible.
+- Les limites : les hyperparamètres utilisés sont ceux par défaut de Stable-Baselines3 et n’ont pas été optimisés spécifiquement pour l’environnement. De plus, chaque algorithme a été entraîné avec une seule seed, ce qui rend les résultats sensibles à l’aléatoire. Une étude plus approfondie impliquerait un réglage des hyperparamètres et une moyenne sur plusieurs seeds. Le nombre de timesteps est aussi limité par le temps disponible.
 
 ---
 
