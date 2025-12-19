@@ -7,6 +7,8 @@ Mon but était de comparer différents algorithmes RL, analyser leurs performanc
 
 J’ai choisi LunarLander-v3 pour sa dynamique complexe et son système de récompense riche, ce qui permet d’observer comment différents agents apprennent à contrôler le module lunaire.
 
+Lien vers la présentation : https://www.canva.com/design/DAG78DrMdbc/gtAIJIMnYRrE6kTtD6DMqg/edit?utm_content=DAG78DrMdbc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ---
 
 ## 2. Environnement : LunarLander-v3
